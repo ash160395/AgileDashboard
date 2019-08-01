@@ -1,0 +1,31 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a [routerLink]="['/dashboard']">
+      Agile KPIs
+    </a>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+    <span class="example-spacer"></span>
+    <a [routerLink]="['/']" routerLinkActive="active">
+      <mat-icon class="icon">details</mat-icon>
+      <span class="label">Master Data</span>
+    </a>
+    
+    <a [routerLink]="['/dashboard']" routerLinkActive="active">
+      <mat-icon class="icon">dashboard</mat-icon>
+      <span class="label">Dashboard</span>
+    </a>
+
+    <a [routerLink]="['/teams']" routerLinkActive="active">
+      <mat-icon class="icon">group_work</mat-icon>
+      <span class="label">Teams</span>
+    </a>
+    <!-- mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+    <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon> -->
+  </mat-toolbar-row>
+</mat-toolbar>
+    
+<router-outlet></router-outlet>
